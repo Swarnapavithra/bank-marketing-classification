@@ -1,5 +1,11 @@
 import streamlit as st
 import pandas as pd
+import sys
+import importlib.util
+
+st.write("Python version:", sys.version)
+st.write("Joblib module found:", importlib.util.find_spec("joblib"))
+
 import joblib
 import os
 
